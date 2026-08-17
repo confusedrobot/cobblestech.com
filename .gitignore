@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Full-resolution screenshot originals kept locally, not shipped to the site
+assets/images/_full-res/
