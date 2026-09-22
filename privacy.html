@@ -1,118 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Cobbles Tech</title>
-  <meta name="description" content="Privacy Policy for Cobbles Tech LLC — what we collect, what we don't, and how we keep your data safe.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23D95F02'/><text y='22' x='4' font-size='18'>🐦</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Cobbles Tech</title>
+<meta name="description" content="Privacy Policy for Cobbles Tech LLC apps and website, including PigeonSnap and Cinnamon.">
+<link rel="canonical" href="https://cobblestech.com/privacy">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#f5f8fc">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Ccircle cx='11' cy='11' r='9' fill='%231f5eff'/%3E%3Ccircle cx='19' cy='19' r='9' fill='%239ec1ff' fill-opacity='.9'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f5f8fc;--ink:#0b1a33;--accent:#1f5eff;--accent-ink:#123d9e;--tint:#e2ebfa;--sub:#4b5870;--foot:#7d8798;--border:#d3deef;--card:#fff;--serif:'Fraunces',Georgia,serif;--sans:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--gutter:clamp(20px,5vw,72px)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}
+  .wrap{width:100%;max-width:1440px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}
+  .brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--serif);font-size:24px;font-weight:500;letter-spacing:-.02em;color:var(--ink)}
+  .brand:hover{text-decoration:none;color:var(--accent)}
+  .brand svg{width:28px;height:28px}
+  .nav-links{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500}
+  .nav-links a{color:var(--ink)}.nav-links a:hover{color:var(--accent);text-decoration:none}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border-radius:999px;font-weight:600;font-size:15px;min-height:44px;background:var(--ink);color:var(--bg)!important}
+  .btn:hover{background:#142a52;text-decoration:none}
+  .head{padding:clamp(32px,5vw,72px) 0 clamp(28px,4vw,48px);max-width:800px}
+  .eyebrow{display:inline-flex;padding:8px 14px;border-radius:999px;background:var(--tint);font-size:13px;font-weight:600;color:var(--accent-ink);margin-bottom:24px}
+  h1{margin:0 0 16px;font-family:var(--serif);font-weight:400;font-size:clamp(40px,5vw,64px);line-height:1.02;letter-spacing:-.03em}
+  .meta{color:var(--sub);font-size:16px}
+  .layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:48px;align-items:start;padding-bottom:clamp(56px,7vw,96px)}
+  .toc{position:sticky;top:24px;display:flex;flex-direction:column;gap:6px;font-size:14px}
+  .toc span{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--foot);margin-bottom:8px}
+  .toc a{color:var(--sub);padding:4px 0}.toc a:hover{color:var(--accent);text-decoration:none}
+  .doc{background:var(--card);border-radius:32px;padding:clamp(28px,4vw,64px);max-width:880px}
+  .doc h2{margin:0 0 12px;font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.4vw,30px);line-height:1.15;letter-spacing:-.02em;scroll-margin-top:24px}
+  .doc h3{margin:18px 0 8px;font-size:17px;font-weight:600}
+  .doc section{padding:28px 0;border-top:1px solid var(--border)}
+  .doc section:first-of-type{padding-top:0;border-top:0}
+  .doc p{margin:0 0 14px;color:var(--sub)}.doc p:last-child{margin-bottom:0}
+  .doc ul{margin:0 0 14px;padding-left:22px;color:var(--sub)}.doc li{margin-bottom:6px}
+  .doc strong{color:var(--ink);font-weight:600}
+  .principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 6px}
+  .principle{padding:16px 18px;border-radius:14px;background:var(--bg);border:1px solid var(--border);font-size:15px;color:var(--sub)}
+  .principle strong{display:block;margin-bottom:4px}
+  table{width:100%;border-collapse:collapse;font-size:15px;margin:0 0 14px}
+  th,td{text-align:left;vertical-align:top;padding:12px 10px;border-bottom:1px solid var(--border);color:var(--sub)}
+  th{font-weight:600;color:var(--ink);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+  .footer{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:32px 0 36px;font-size:14px;color:var(--foot);border-top:1px solid var(--border)}
+  .footer a{color:var(--foot)}.footer-links{display:flex;gap:28px}
+  @media (max-width:900px){.layout{grid-template-columns:1fr}.toc{display:none}.principles{grid-template-columns:1fr}}
+  @media (max-width:640px){.nav-links a:not(.btn){display:none}.footer{flex-direction:column;align-items:flex-start}table,thead,tbody,tr,th,td{display:block}thead{display:none}td{border:0;padding:4px 0}tr{padding:12px 0;border-bottom:1px solid var(--border)}td:first-child{font-weight:600;color:var(--ink)}}
+</style>
 </head>
 <body>
+<header class="wrap">
+  <nav class="nav" aria-label="Primary">
+    <a href="/" class="brand"><svg viewBox="0 0 30 30" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="9" fill="#1f5eff"/><circle cx="19" cy="19" r="9" fill="#9ec1ff" fill-opacity="0.9"/></svg>Cobbles</a>
+    <div class="nav-links"><a href="/terms">Terms</a><a href="mailto:cobblestech@gmail.com" class="btn">Say hello</a></div>
+  </nav>
+</header>
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <svg class="nav-logo-icon" viewBox="0 0 30 30" fill="none">
-        <circle cx="15" cy="15" r="14" fill="#FEF0E3" stroke="#F0E6D3" stroke-width="1.2"/>
-        <path d="M7 17c0-4.4 3.6-8 8-8h8l2 4-4 1-1 4-5-1-3 3-3-2 1-2H7z" fill="#D95F02"/>
-        <circle cx="21" cy="11" r="2" fill="#2D2006"/>
-        <path d="M23 11l3-1" stroke="#D95F02" stroke-width="1.4" stroke-linecap="round"/>
-      </svg>
-      Cobbles Tech
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#apps">Apps</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
+<main class="wrap">
+  <div class="head">
+    <span class="eyebrow">Legal</span>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective September 22, 2026 · Cobbles Tech LLC, Connecticut, USA</p>
   </div>
-</nav>
 
-<div class="page-wrap">
-<div style="max-width:780px;margin:0 auto;padding:calc(var(--nav-h) + 48px) 28px 80px;">
+  <div class="layout">
+    <nav class="toc" aria-label="Sections">
+      <span>Contents</span>
+      <a href="#philosophy">1. Our philosophy</a><a href="#scope">2. Apps this covers</a><a href="#collect">3. What we collect</a><a href="#cinnamon">4. Cinnamon</a><a href="#not">5. What we don't do</a><a href="#security">6. Storage &amp; security</a><a href="#third">7. Third parties</a><a href="#age">8. Age requirement</a><a href="#rights">9. Your rights</a><a href="#transfers">10. International transfers</a><a href="#retention">11. Retention &amp; cookies</a><a href="#changes">12. Changes</a><a href="#contact">13. Contact</a>
+    </nav>
 
-  <h1 style="font-size:38px;margin-bottom:8px;">Privacy Policy</h1>
-  <p style="font-size:13px;color:var(--text-muted);margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border);">
-    Effective: June 7, 2026 · Cobbles Tech LLC
-  </p>
+    <article class="doc">
+      <section id="philosophy">
+        <h2>1. Our philosophy</h2>
+        <div class="principles">
+          <div class="principle"><strong>Collect the minimum.</strong>Only what the feature you're using actually needs.</div>
+          <div class="principle"><strong>Never sell your data.</strong>No advertising, no data brokers, no business model built on you.</div>
+          <div class="principle"><strong>No training on your content.</strong>Your receipts, notes, and household information are never used to train AI models.</div>
+        </div>
+      </section>
 
-  <div style="font-size:15px;color:var(--text-muted);line-height:1.75;max-width:660px;">
+      <section id="scope">
+        <h2>2. Apps and services this policy covers</h2>
+        <p>This policy applies to the website at cobblestech.com (the "Site") and the apps published by Cobbles Tech LLC ("Cobbles Tech", "we", "us"): <strong>PigeonSnap</strong>, a receipt-scanning app that works entirely on your device without an account; and <strong>Cinnamon</strong>, an AI agent for households that requires an account and processes the requests you give it. Because the two work differently, some sections below apply to only one of them and say so.</p>
+      </section>
 
-    <p>We believe your data belongs to you. This policy explains exactly what we collect, why we collect it, and what we don't.</p>
+      <section id="collect">
+        <h2>3. What we collect</h2>
+        <table>
+          <thead><tr><th>Data</th><th>Why</th><th>Retention</th></tr></thead>
+          <tbody>
+            <tr><td>Crash &amp; performance data (all Apps)</td><td>Anonymous diagnostics to fix bugs. No personal information, no content.</td><td>90 days, then deleted.</td></tr>
+            <tr><td>App Store purchase information (all Apps)</td><td>As provided by Apple, to honor subscriptions.</td><td>While the subscription is active, plus 30 days.</td></tr>
+            <tr><td>Support correspondence (all Apps)</td><td>Your name, email, and message so we can reply.</td><td>Up to 24 months. Delete anytime by emailing us.</td></tr>
+            <tr><td>Account information (Cinnamon)</td><td>Name and email from your Google, Apple, or email sign-in, to identify your account and household.</td><td>While your account exists, then deleted within 30 days.</td></tr>
+            <tr><td>Requests, conversations &amp; household information (Cinnamon)</td><td>What you ask Cinnamon to do and the context it needs to remember (people, places, preferences), to carry out your requests.</td><td>While your account exists. You can delete individual items or your entire history at any time.</td></tr>
+            <tr><td>Connected-service data (Cinnamon)</td><td>Calendar, email, messaging, or other data from services you explicitly connect, used only to complete the tasks you ask for.</td><td>Accessed as needed; access tokens deleted when you disconnect the service.</td></tr>
+            <tr><td>Website cookies (Site)</td><td>Functional only. No advertising or tracking cookies.</td><td>Session, or up to 30 days.</td></tr>
+          </tbody>
+        </table>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">1. Our philosophy</h2>
-    <p>Collect only what's strictly necessary. Never build a business model around user data. No analytics platforms, no data sales, no AI training on your content.</p>
+      <section id="cinnamon">
+        <h2>4. How Cinnamon uses your information</h2>
+        <p>Cinnamon is an AI agent. To do what you ask, it needs to understand your request, remember relevant context, and sometimes act through services you connect. Specifically:</p>
+        <h3>AI processing</h3>
+        <p>Your requests and the relevant context are sent to the AI model providers we use to generate Cinnamon's responses and plans. We use providers whose terms prohibit them from training on our customers' data. We do not use your content to train our own models.</p>
+        <h3>Memory</h3>
+        <p>Cinnamon remembers information you give it about your household so that it can be useful over time. You can view what it remembers and delete any of it from within the App.</p>
+        <h3>Household groups</h3>
+        <p>If you create or join a household group, information you place in the shared space is visible to other members of that group. Your private space is visible only to you. Group administrators can remove members; removed members lose access to shared data but keep their private space.</p>
+        <h3>Actions on your behalf</h3>
+        <p>When Cinnamon sends a message, makes a booking, or completes a transaction at your direction, the recipient or provider receives the information necessary for that action, exactly as if you had done it yourself. Cinnamon asks for your confirmation before significant actions.</p>
+        <h3>Connected services</h3>
+        <p>We access connected services only within the permissions you grant and only to complete tasks you ask for. We never read or store connected-service data for any other purpose. You can disconnect a service at any time from the App's settings, which revokes our access.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">2. What we collect</h2>
-    <p>We collect the minimum required to make our apps work:</p>
-    <ul style="padding-left:20px;margin-bottom:14px;">
-      <li><strong>Crash & performance data</strong> — anonymous, no personal info, no content. Retained 90 days then deleted.</li>
-      <li><strong>App Store purchase info</strong> — as provided by Apple at time of purchase. Retained while subscription is active, plus 30 days.</li>
-      <li><strong>Support correspondence</strong> — your name, email, and message. Retained up to 24 months. Delete anytime by emailing <a href="mailto:cobblestech@gmail.com" style="color:var(--accent);">cobblestech@gmail.com</a>.</li>
-      <li><strong>Website cookies</strong> — functional only (no advertising or tracking cookies). Session or up to 30 days.</li>
-    </ul>
+      <section id="not">
+        <h2>5. What we don't do</h2>
+        <ul>
+          <li>We do not sell, rent, or trade your personal information.</li>
+          <li>We do not show advertising or use advertising identifiers.</li>
+          <li>We do not use third-party analytics or tracking platforms.</li>
+          <li>We do not train machine-learning models on your content.</li>
+          <li>We do not collect location data, contacts, or usage analytics beyond crash reports unless a specific feature you enable requires it, in which case we ask first.</li>
+          <li>For PigeonSnap, we do not collect your receipts or notes at all: they stay on your device.</li>
+        </ul>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">3. What we don't collect</h2>
-    <ul style="padding-left:20px;margin-bottom:14px;">
-      <li>Receipts, photos, or any content you create (stored locally on your device only)</li>
-      <li>Precise location data</li>
-      <li>Contacts or calendars</li>
-      <li>Browsing or usage patterns beyond basic crash reporting</li>
-      <li>Device identifiers for advertising</li>
-      <li>Any data to train machine learning models</li>
-      <li>Personal data for marketing or advertising</li>
-    </ul>
+      <section id="security">
+        <h2>6. Data storage and security</h2>
+        <p>Data we hold is stored in encrypted form on secure cloud servers and is encrypted in transit. Access is limited to personnel who need it to operate the service. We follow industry-standard security practices, but no system is perfectly secure. If a breach occurs affecting your data, we will notify you promptly in accordance with applicable law.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">4. Data storage & security</h2>
-    <p>Data we hold is stored in encrypted form on secure servers. We follow industry-standard security practices. If a breach occurs affecting your data, we will notify you (and any required regulator) promptly in accordance with applicable law.</p>
+      <section id="third">
+        <h2>7. Third parties we share with</h2>
+        <p>We share data only with the service providers needed to run the Apps, and only for that purpose:</p>
+        <ul>
+          <li><strong>Apple</strong> — processes App Store purchases and subscriptions, and Sign in with Apple.</li>
+          <li><strong>Google</strong> — Sign in with Google, and any Google services you choose to connect to Cinnamon.</li>
+          <li><strong>AI model providers</strong> — process Cinnamon requests to generate responses, under contracts that prohibit training on your data.</li>
+          <li><strong>Cloud hosting and email providers</strong> — store data and deliver support email.</li>
+          <li><strong>Services you connect</strong> — receive only what is needed to complete the tasks you ask Cinnamon to perform.</li>
+          <li><strong>Law enforcement or regulators</strong> — when legally required, and only to the extent required.</li>
+        </ul>
+        <p>We do not share your data with advertisers or data brokers.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">5. Third parties</h2>
-    <ul style="padding-left:20px;margin-bottom:14px;">
-      <li><strong>Apple</strong> — processes all App Store purchases and subscriptions</li>
-      <li><strong>Email provider</strong> — to deliver our support responses</li>
-      <li><strong>Law enforcement</strong> — when legally required by valid court order or subpoena</li>
-    </ul>
-    <p>We do not sell, rent, or trade your data with any other third parties, including advertisers or data brokers.</p>
+      <section id="age">
+        <h2>8. Age requirement</h2>
+        <p><strong>Our Apps are for adults 18 and older.</strong> We do not knowingly collect personal data from anyone under 18, and the Apps are not directed to children. If you believe someone under 18 has created an account or provided us with data, contact us at <a href="mailto:cobblestech@gmail.com">cobblestech@gmail.com</a> and we will delete it.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">6. Children's privacy</h2>
-    <p>Our Apps are not directed to children under 13. We do not knowingly collect personal data from children. If you believe a child has provided us with data, contact us at <a href="mailto:cobblestech@gmail.com" style="color:var(--accent);">cobblestech@gmail.com</a> and we will delete it.</p>
+      <section id="rights">
+        <h2>9. Your rights</h2>
+        <p>Wherever you live, you can ask us to access, correct, delete, or export the personal data we hold about you, or to stop processing it. Cinnamon users can also delete their account and all associated data directly from the App. To exercise any right, email <a href="mailto:cobblestech@gmail.com">cobblestech@gmail.com</a>; we respond within 30 days. Residents of the EU/EEA, UK, California, and other jurisdictions with privacy laws have additional statutory rights, including the right to lodge a complaint with a local data protection authority. We will never discriminate against you for exercising your rights.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">7. Your rights</h2>
-    <p>Depending on where you live, you may have the right to:</p>
-    <ul style="padding-left:20px;margin-bottom:14px;">
-      <li><strong>Access</strong> — request a copy of data we hold about you</li>
-      <li><strong>Correction</strong> — request correction of inaccurate data</li>
-      <li><strong>Deletion</strong> — request deletion of your data</li>
-      <li><strong>Objection</strong> — object to processing based on legitimate interests</li>
-      <li><strong>Portability</strong> — request your data in a machine-readable format</li>
-    </ul>
-    <p>To exercise any rights, email <a href="mailto:cobblestech@gmail.com" style="color:var(--accent);">cobblestech@gmail.com</a>. We respond within 30 days. EU/EEA residents additionally have the right to lodge a complaint with their local data protection authority.</p>
+      <section id="transfers">
+        <h2>10. International transfers</h2>
+        <p>Your data may be transferred to and processed in the United States, where our servers and providers are located. Where required by applicable law, we use appropriate safeguards for such transfers, including Standard Contractual Clauses.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">8. International transfers</h2>
-    <p>Data may be transferred to and processed in the United States, where our servers are located. We take appropriate safeguards for any such transfers, including Standard Contractual Clauses where required by applicable law.</p>
+      <section id="retention">
+        <h2>11. Data retention and website cookies</h2>
+        <p>We retain data only as long as necessary for the purpose it was collected, as set out in the table in Section 3. When you delete your Cinnamon account, we delete your account data, conversations, and household information within 30 days, except where we must retain records to comply with law. The Site uses only functional, non-tracking cookies.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">9. Data retention & website tracking</h2>
-    <p>We retain data only as long as necessary. Crash data: 90 days. Support correspondence: up to 24 months. Our website uses only functional, non-tracking cookies.</p>
+      <section id="changes">
+        <h2>12. Changes to this policy</h2>
+        <p>We may update this Privacy Policy from time to time. Material changes will be reflected by an updated "Effective" date at the top of this page, and where practical we will notify you in the App. Continued use of the Apps after changes take effect constitutes acceptance of the updated policy.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">10. Changes to this policy</h2>
-    <p>We may update this Privacy Policy from time to time. Material changes will be reflected by an updated "Effective" date. Continued use of our Apps after changes take effect constitutes acceptance of the updated policy.</p>
-
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">11. Contact</h2>
-    <p>Questions or data rights requests: <a href="mailto:cobblestech@gmail.com" style="color:var(--accent);">cobblestech@gmail.com</a></p>
-    <p>Cobbles Tech LLC · Connecticut, USA</p>
-
+      <section id="contact">
+        <h2>13. Contact</h2>
+        <p>Questions or data-rights requests: <a href="mailto:cobblestech@gmail.com">cobblestech@gmail.com</a></p>
+        <p>Cobbles Tech LLC · Connecticut, USA</p>
+      </section>
+    </article>
   </div>
-</div>
-</div>
+</main>
 
-<footer>
-  <p>© 2026 Cobbles Tech LLC · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
+<footer class="wrap footer">
+  <span>© 2026 Cobbles Tech LLC · Connecticut, USA</span>
+  <div class="footer-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
 </footer>
-
-<script src="main.js"></script>
 </body>
 </html>

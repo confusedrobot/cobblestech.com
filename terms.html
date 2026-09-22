@@ -1,115 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms of Service — Cobbles Tech</title>
-  <meta name="description" content="Terms of Service for Cobbles Tech LLC software applications.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23D95F02'/><text y='22' x='4' font-size='18'>🐦</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service — Cobbles Tech</title>
+<meta name="description" content="Terms of Service for Cobbles Tech LLC apps and website, including PigeonSnap and Cinnamon.">
+<link rel="canonical" href="https://cobblestech.com/terms">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#f5f8fc">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Ccircle cx='11' cy='11' r='9' fill='%231f5eff'/%3E%3Ccircle cx='19' cy='19' r='9' fill='%239ec1ff' fill-opacity='.9'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f5f8fc;--ink:#0b1a33;--accent:#1f5eff;--accent-ink:#123d9e;--tint:#e2ebfa;--sub:#4b5870;--foot:#7d8798;--border:#d3deef;--card:#fff;--serif:'Fraunces',Georgia,serif;--sans:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--gutter:clamp(20px,5vw,72px)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:3px}
+  .wrap{width:100%;max-width:1440px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}
+  .brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--serif);font-size:24px;font-weight:500;letter-spacing:-.02em;color:var(--ink)}
+  .brand:hover{text-decoration:none;color:var(--accent)}
+  .brand svg{width:28px;height:28px}
+  .nav-links{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:500}
+  .nav-links a{color:var(--ink)}.nav-links a:hover{color:var(--accent);text-decoration:none}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border-radius:999px;font-weight:600;font-size:15px;min-height:44px;background:var(--ink);color:var(--bg)!important}
+  .btn:hover{background:#142a52;text-decoration:none}
+  .head{padding:clamp(32px,5vw,72px) 0 clamp(28px,4vw,48px);max-width:800px}
+  .eyebrow{display:inline-flex;padding:8px 14px;border-radius:999px;background:var(--tint);font-size:13px;font-weight:600;color:var(--accent-ink);margin-bottom:24px}
+  h1{margin:0 0 16px;font-family:var(--serif);font-weight:400;font-size:clamp(40px,5vw,64px);line-height:1.02;letter-spacing:-.03em}
+  .meta{color:var(--sub);font-size:16px}
+  .layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:48px;align-items:start;padding-bottom:clamp(56px,7vw,96px)}
+  .toc{position:sticky;top:24px;display:flex;flex-direction:column;gap:6px;font-size:14px}
+  .toc span{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--foot);margin-bottom:8px}
+  .toc a{color:var(--sub);padding:4px 0}.toc a:hover{color:var(--accent);text-decoration:none}
+  .doc{background:var(--card);border-radius:32px;padding:clamp(28px,4vw,64px);max-width:880px}
+  .doc h2{margin:0 0 12px;font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.4vw,30px);line-height:1.15;letter-spacing:-.02em;scroll-margin-top:24px}
+  .doc section{padding:28px 0;border-top:1px solid var(--border)}
+  .doc section:first-of-type{padding-top:0;border-top:0}
+  .doc p{margin:0 0 14px;color:var(--sub)}.doc p:last-child{margin-bottom:0}
+  .doc ul{margin:0 0 14px;padding-left:22px;color:var(--sub)}.doc li{margin-bottom:6px}
+  .doc strong{color:var(--ink);font-weight:600}
+  .callout{margin:0 0 14px;padding:16px 20px;border-radius:14px;background:var(--bg);border:1px solid var(--border);color:var(--sub)}
+  .footer{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:32px 0 36px;font-size:14px;color:var(--foot);border-top:1px solid var(--border)}
+  .footer a{color:var(--foot)}.footer-links{display:flex;gap:28px}
+  @media (max-width:900px){.layout{grid-template-columns:1fr}.toc{position:static;display:none}}
+  @media (max-width:640px){.nav-links a:not(.btn){display:none}.footer{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
+<header class="wrap">
+  <nav class="nav" aria-label="Primary">
+    <a href="/" class="brand"><svg viewBox="0 0 30 30" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="9" fill="#1f5eff"/><circle cx="19" cy="19" r="9" fill="#9ec1ff" fill-opacity="0.9"/></svg>Cobbles</a>
+    <div class="nav-links"><a href="/privacy">Privacy</a><a href="mailto:cobblestech@gmail.com" class="btn">Say hello</a></div>
+  </nav>
+</header>
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <svg class="nav-logo-icon" viewBox="0 0 30 30" fill="none">
-        <circle cx="15" cy="15" r="14" fill="#FEF0E3" stroke="#F0E6D3" stroke-width="1.2"/>
-        <path d="M7 17c0-4.4 3.6-8 8-8h8l2 4-4 1-1 4-5-1-3 3-3-2 1-2H7z" fill="#D95F02"/>
-        <circle cx="21" cy="11" r="2" fill="#2D2006"/>
-        <path d="M23 11l3-1" stroke="#D95F02" stroke-width="1.4" stroke-linecap="round"/>
-      </svg>
-      Cobbles Tech
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#apps">Apps</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
-    </ul>
+<main class="wrap">
+  <div class="head">
+    <span class="eyebrow">Legal</span>
+    <h1>Terms of Service</h1>
+    <p class="meta">Effective September 22, 2026 · Cobbles Tech LLC, Connecticut, USA</p>
   </div>
-</nav>
 
-<div class="page-wrap">
-<div class="page-wrap" style="padding-bottom:80px;">
+  <div class="layout">
+    <nav class="toc" aria-label="Sections">
+      <span>Contents</span>
+      <a href="#acceptance">1. Acceptance</a><a href="#eligibility">2. Eligibility</a><a href="#license">3. License</a><a href="#accounts">4. Accounts</a><a href="#cinnamon">5. Cinnamon &amp; agent actions</a><a href="#purchases">6. Purchases</a><a href="#content">7. Your content</a><a href="#privacy">8. Privacy</a><a href="#conduct">9. Prohibited conduct</a><a href="#ip">10. Intellectual property</a><a href="#third">11. Third-party services</a><a href="#disclaimer">12. Disclaimer</a><a href="#liability">13. Limitation of liability</a><a href="#indemnity">14. Indemnification</a><a href="#changes">15. Modifications</a><a href="#termination">16. Termination</a><a href="#law">17. Governing law</a><a href="#export">18. Export controls</a><a href="#misc">19. Severability</a><a href="#contact">20. Contact</a>
+    </nav>
 
-<div style="max-width:780px;margin:0 auto;padding:calc(var(--nav-h) + 48px) 28px 0;">
+    <article class="doc">
+      <section id="acceptance">
+        <h2>1. Acceptance of these Terms</h2>
+        <p>These Terms of Service ("Terms") govern your use of the website at cobblestech.com (the "Site") and the mobile and web applications published by Cobbles Tech LLC ("Cobbles Tech", "we", "us"), including <strong>PigeonSnap</strong> and <strong>Cinnamon</strong> (together, the "Apps"). By accessing the Site or using an App, you agree to these Terms and to our <a href="/privacy">Privacy Policy</a>. If you do not agree, do not use the Apps or Site.</p>
+        <p>If you use the Apps on behalf of an organization, you represent that you have authority to bind that organization to these Terms.</p>
+      </section>
 
-  <h1 style="font-size:38px;margin-bottom:8px;">Terms of Service</h1>
-  <p style="font-size:13px;color:var(--text-muted);margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border);">
-    Effective: June 7, 2026 · Cobbles Tech LLC
-  </p>
+      <section id="eligibility">
+        <h2>2. Eligibility and minimum age</h2>
+        <p><strong>You must be at least 18 years old</strong> (or the age of majority in your jurisdiction, if higher) to use the Apps or create an account. The Apps are not intended for, and may not be used by, anyone under 18. By using the Apps you confirm that you meet this requirement. If we learn that a user is under 18, we will terminate the account and delete associated data.</p>
+        <p>Cinnamon may allow you to share a household group with other people. Every member of a household group must independently meet this age requirement and accept these Terms.</p>
+      </section>
 
-  <div style="font-size:15px;color:var(--text-muted);line-height:1.75;max-width:660px;">
+      <section id="license">
+        <h2>3. License to use the Apps</h2>
+        <p>Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to install and use the Apps for their intended purpose. You may not copy, modify, distribute, sell, lease, reverse engineer, or attempt to extract the source code of the Apps, except where applicable law expressly permits. We may modify, suspend, or discontinue any App or feature at any time, with or without notice.</p>
+      </section>
 
-    <p>These Terms of Service ("Terms") govern your access to and use of Cobbles Tech LLC's software applications ("Apps"), including PigeonSnap, and the cobblestech.com website (the "Site"). By downloading, installing, or using any App, or by accessing the Site, you agree to be bound by these Terms. If you do not agree, do not use our Apps or the Site.</p>
+      <section id="accounts">
+        <h2>4. Accounts</h2>
+        <p>Some Apps, such as PigeonSnap, are designed to work without an account. Others, such as Cinnamon, require you to sign in (for example with Google, Apple, or an email address). You are responsible for keeping your credentials secure and for all activity under your account. We are not liable for loss arising from unauthorized use of your account. If you believe your account has been compromised, contact us immediately at <a href="mailto:cobblestech@gmail.com">cobblestech@gmail.com</a>.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">1. Acceptance</h2>
-    <p>You confirm that you are at least 13 years of age (or the minimum age required in your jurisdiction to use our services without parental consent). If you are under 18, you represent that a parent or guardian has reviewed and agreed to these Terms on your behalf. If you are using an App on behalf of an organization, you represent that you have authority to bind that organization to these Terms.</p>
+      <section id="cinnamon">
+        <h2>5. Cinnamon and actions taken on your behalf</h2>
+        <p>Cinnamon is an AI agent that can plan and carry out tasks you ask for, including drafting and sending messages, making bookings, and interacting with third-party services you connect. By using Cinnamon you understand and agree that:</p>
+        <ul>
+          <li><strong>You direct the agent.</strong> Cinnamon acts only on instructions from you or members of your household group, and asks for confirmation before actions we designate as significant (such as sending, booking, purchasing, or sharing). You are responsible for the instructions you give and the confirmations you provide.</li>
+          <li><strong>AI output can be wrong.</strong> Cinnamon uses machine-learning models that may misunderstand, produce inaccurate information, or take an action other than the one you intended. Review important results before relying on them. Cinnamon is not a substitute for professional advice (legal, medical, financial, or otherwise).</li>
+          <li><strong>Connected services are yours.</strong> When you connect a third-party account (calendar, email, messaging, or similar), you authorize Cinnamon to access and act through it as needed to complete your requests, within the permissions you grant. You are responsible for complying with that service's terms.</li>
+          <li><strong>Household groups.</strong> Information you place in a shared household space is visible to other members of that group. Keep anything you do not want shared in your private space. You are responsible for who you invite.</li>
+          <li><strong>Transactions.</strong> Any purchase, reservation, or commitment Cinnamon makes at your direction is between you and the relevant merchant or provider. We are not a party to those transactions.</li>
+        </ul>
+        <p>Cinnamon is offered as an early-access product and its features may change substantially.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">2. License</h2>
-    <p>Cobbles Tech LLC ("we," "us," or "our") grants you a limited, non-exclusive, non-transferable, revocable license to use our Apps for their intended purpose, subject to these Terms and any applicable App Store terms. You may not reverse engineer, decompile, or disassemble our Apps unless expressly permitted by applicable law. We reserve the right to modify, suspend, or discontinue any App at any time with or without notice.</p>
+      <section id="purchases">
+        <h2>6. Purchases and subscriptions</h2>
+        <p>Purchases made through the Apple App Store are governed by Apple's Paid Application Agreement and Apple's refund policy. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. You can manage or cancel subscriptions in your App Store account settings. We do not process refunds directly for App Store purchases. If we offer purchases through other channels in the future, the terms shown at checkout will apply.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">3. Accounts</h2>
-    <p>Our Apps are designed to work without an account. Where an account is optionally created, you are responsible for keeping your credentials secure and for all activity under your account. We are not liable for unauthorized access. Contact us at <a href="mailto:cobblestech@gmail.com" style="color:var(--accent);">cobblestech@gmail.com</a> immediately if you believe your account has been compromised.</p>
+      <section id="content">
+        <h2>7. Your content</h2>
+        <p>You retain full ownership of content you create or provide through the Apps, including scanned receipts, notes, messages, instructions, and household information ("Your Content"). We do not claim ownership of Your Content. You grant us a limited license to store, process, and transmit Your Content solely as necessary to provide and improve the service you have requested, including sending it to the AI model providers and third-party services we use to operate the Apps.</p>
+        <p>We do not use Your Content to train machine-learning models. You are responsible for having the rights to any content you provide and for ensuring it does not violate the law or the rights of others.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">4. Purchases & Subscriptions</h2>
-    <p>Some features may be available for purchase via the Apple App Store and are subject to Apple's Paid Application Agreement. All purchases are final unless stated otherwise or as required by applicable law. <strong>Subscriptions auto-renew unless canceled at least 24 hours before the end of the current period.</strong> Manage or cancel subscriptions in your App Store account settings at any time. Refunds are governed by Apple's refund policy; we do not process refunds directly.</p>
+      <section id="privacy">
+        <h2>8. Privacy</h2>
+        <p>We collect only what we need to provide the service and we do not sell your data. Our <a href="/privacy">Privacy Policy</a> explains what we collect, how we use it, and your rights, and is incorporated into these Terms.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">5. User Content</h2>
-    <p>Our Apps let you create and store content (e.g., scanned receipts, notes, categories). <strong>You retain full ownership of your content.</strong> We do not claim ownership rights. By using our Apps, you grant us a limited license to process your content as necessary to provide the service. We do not use your content to train machine learning models.</p>
+      <section id="conduct">
+        <h2>9. Prohibited conduct</h2>
+        <p>You agree not to: violate any law or regulation; use the Apps to harass, defraud, or harm others; upload malicious code or harmful content; attempt unauthorized access to our systems or other users' accounts or household groups; use bots, scrapers, or automated means to access the Apps beyond their intended interfaces; interfere with or degrade the service; direct Cinnamon to take actions that violate a third party's terms or rights; or use the Apps to build a competing product. Violations may result in immediate suspension or termination.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">6. Privacy</h2>
-    <p>Your privacy matters. We collect only what is strictly necessary to provide the service. We do not sell your data. For full details, see our <a href="privacy.html" style="color:var(--accent);">Privacy Policy</a>. By using our Apps, you consent to our data practices as described there.</p>
+      <section id="ip">
+        <h2>10. Intellectual property</h2>
+        <p>The Apps, Site, and all related content, software, designs, and materials are the exclusive property of Cobbles Tech LLC or its licensors and are protected by copyright, trademark, and other laws. "Cobbles Tech", "PigeonSnap", and "Cinnamon" are trademarks of Cobbles Tech LLC. You may not use our trademarks without prior written permission. To report an infringement claim, email <a href="mailto:cobblestech@gmail.com">cobblestech@gmail.com</a>.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">7. Prohibited Conduct</h2>
-    <p>You agree not to use our Apps or Site to: violate any applicable law or third-party rights; upload harmful, defamatory, or discriminatory content; attempt unauthorized access; use automated bots or scrapers; interfere with our systems; or use our Apps to develop a competing product. Violations may result in immediate suspension or termination.</p>
+      <section id="third">
+        <h2>11. Third-party services</h2>
+        <p>The Apps may integrate with or link to third-party services, including AI model providers, sign-in providers, and services you choose to connect. Those services are governed by their own terms and privacy policies. We do not endorse and are not responsible for third-party services, and your use of them is at your own risk.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">8. Intellectual Property</h2>
-    <p>All Apps, content, trademarks, and materials provided by Cobbles Tech LLC are our exclusive property or that of our licensors, protected by intellectual property law. "PigeonSnap" and "Cobbles Tech" are trademarks of Cobbles Tech LLC. You may not use our trademarks without prior written consent. If you believe your work has been reproduced in a way that constitutes infringement, contact us at <a href="mailto:cobblestech@gmail.com" style="color:var(--accent);">cobblestech@gmail.com</a>.</p>
+      <section id="disclaimer">
+        <h2>12. Disclaimer of warranties</h2>
+        <p>THE APPS AND SITE ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT. We do not warrant that the Apps will be uninterrupted, error-free, or that AI-generated output or actions will be accurate, complete, or suitable for any purpose. Some jurisdictions do not allow the exclusion of implied warranties, so some of the above may not apply to you.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">9. Third-Party Services</h2>
-    <p>Our Apps may link to or integrate third-party services (e.g., sharing features). These are governed by their own terms and privacy policies. We do not endorse or assume responsibility for third-party services — use at your own risk.</p>
+      <section id="liability">
+        <h2>13. Limitation of liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, COBBLES TECH LLC AND ITS OFFICERS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS, OR GOODWILL, ARISING FROM YOUR USE OF THE APPS OR SITE, INCLUDING ACTIONS TAKEN BY CINNAMON AT YOUR DIRECTION. OUR TOTAL LIABILITY FOR ANY CLAIM SHALL NOT EXCEED THE GREATER OF THE AMOUNT YOU PAID US IN THE TWELVE MONTHS BEFORE THE CLAIM OR FIFTY U.S. DOLLARS (US$50). Some jurisdictions do not allow these limitations, so they may not apply to you.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">10. Disclaimer</h2>
-    <p><strong>Our Apps and Site are provided "as is" and "as available" without warranties of any kind, express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</strong> We do not warrant that our Apps will be uninterrupted, error-free, or completely secure. Some jurisdictions do not allow disclaimer of implied warranties, so this may not apply to you.</p>
+      <section id="indemnity">
+        <h2>14. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Cobbles Tech LLC and its officers, employees, and agents from any claims, damages, losses, and expenses (including reasonable attorneys' fees) arising from your violation of these Terms, your misuse of the Apps, instructions you give to Cinnamon, or your violation of any law or third-party right.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">11. Limitation of Liability</h2>
-    <p><strong>To the maximum extent permitted by law, Cobbles Tech LLC and its officers, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages — including loss of profits, data, use, or goodwill — arising out of or related to your use of our Apps or Site.</strong> Our total liability shall not exceed the amount you paid us (if any) in the twelve months preceding the claim, or fifty US dollars ($50), whichever is greater. Some jurisdictions do not allow this limitation, so it may not apply to you.</p>
+      <section id="changes">
+        <h2>15. Modifications to these Terms</h2>
+        <p>We may update these Terms from time to time. Material changes will be reflected by an updated "Effective" date at the top of this page, and where practical we will notify you in the App. Continued use of the Apps after changes take effect constitutes acceptance of the updated Terms.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">12. Indemnification</h2>
-    <p>You agree to indemnify, defend, and hold harmless Cobbles Tech LLC and its officers, employees, and agents from any claims, damages, losses, and expenses (including reasonable attorneys' fees) arising out of: (a) your violation of these Terms; (b) your misuse of our Apps; or (c) your violation of any third-party rights or applicable law.</p>
+      <section id="termination">
+        <h2>16. Termination</h2>
+        <p>You may stop using the Apps and delete your account at any time. We may suspend or terminate your access at any time, with or without cause, including for violation of these Terms. Sections 7, 8, 10, 12, 13, 14, and 17 survive termination.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">13. Modifications</h2>
-    <p>We may update these Terms from time to time. Material changes will be reflected by an updated "Effective" date. Continued use of our Apps after changes take effect constitutes acceptance of the updated Terms.</p>
+      <section id="law">
+        <h2>17. Governing law and disputes</h2>
+        <p>These Terms are governed by the laws of the State of Connecticut, USA, without regard to conflict-of-law principles. Any dispute arising from these Terms or the Apps shall be brought exclusively in the state or federal courts located in Connecticut, and you consent to their jurisdiction. To the extent permitted by law, you agree to bring claims only in your individual capacity and waive any right to participate in a class action or class-wide arbitration.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">14. Termination</h2>
-    <p>These Terms remain in effect until terminated. You may stop using our Apps at any time. We may suspend or terminate your access at any time, with or without cause, particularly if you materially breach these Terms. Upon termination, Sections 5, 6, 8, 10, 11, and 12 survive.</p>
+      <section id="export">
+        <h2>18. Export controls</h2>
+        <p>You agree to comply with all applicable U.S. export and sanctions laws and confirm that you are not located in, or a resident of, a country or on a list subject to U.S. government sanctions or embargo.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">15. Governing Law</h2>
-    <p>These Terms are governed by the laws of the State of Connecticut, USA, without regard to conflict of law principles. Any dispute shall be resolved exclusively in the state or federal courts located in Connecticut, USA, and you hereby consent to personal jurisdiction of those courts. <strong>You agree to waive any right to participate in a class action or class-wide arbitration against Cobbles Tech LLC.</strong></p>
+      <section id="misc">
+        <h2>19. Severability and entire agreement</h2>
+        <p>If any provision of these Terms is found unenforceable, it will be limited to the minimum extent necessary and the remaining provisions will remain in full force. These Terms, together with the Privacy Policy, constitute the entire agreement between you and Cobbles Tech LLC regarding the Apps and Site.</p>
+      </section>
 
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">16. Export Controls</h2>
-    <p>You agree to comply with all applicable export control laws and regulations of the United States. You represent that you are not located in, under the control of, or a national or resident of any country subject to US sanctions.</p>
-
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">17. Severability & Entire Agreement</h2>
-    <p>If any provision is found unenforceable, it shall be limited to the minimum extent necessary, and the remaining provisions remain in full force. These Terms, together with our <a href="privacy.html" style="color:var(--accent);">Privacy Policy</a>, constitute the entire agreement between you and Cobbles Tech LLC.</p>
-
-    <h2 style="font-size:18px;font-weight:800;letter-spacing:-0.3px;color:var(--text);margin-top:36px;margin-bottom:10px;">18. Contact</h2>
-    <p>Questions? Contact us at <a href="mailto:cobblestech@gmail.com" style="color:var(--accent);">cobblestech@gmail.com</a>.</p>
-    <p>Cobbles Tech LLC · Connecticut, USA</p>
-
+      <section id="contact">
+        <h2>20. Contact</h2>
+        <p>Questions about these Terms: <a href="mailto:cobblestech@gmail.com">cobblestech@gmail.com</a></p>
+        <p>Cobbles Tech LLC · Connecticut, USA</p>
+      </section>
+    </article>
   </div>
-</div>
-</div>
-</div>
+</main>
 
-<footer>
-  <p>© 2026 Cobbles Tech LLC · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
+<footer class="wrap footer">
+  <span>© 2026 Cobbles Tech LLC · Connecticut, USA</span>
+  <div class="footer-links"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
 </footer>
-
-<script src="main.js"></script>
 </body>
 </html>
